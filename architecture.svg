@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">CMS 837A / 837B Architecture Diagram</title>
+  <desc id="desc">Pipeline showing RAC Pre-Edit Framework, Receiver Validation, Transaction Identification, Dynamic Rules, Duplicate Check, Error Reporting, Claim Classification, ITXA Translation, and GIAS Adjudication.</desc>
+
+  <defs>
+    <style>
+      .title { font: 700 34px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .section { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .small { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .box { fill: #eff6ff; stroke: #2563eb; stroke-width: 2.5; rx: 16; }
+      .subbox { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; rx: 12; }
+      .dark { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2.5; rx: 16; }
+      .arrow { stroke: #475569; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .dashed { stroke: #64748b; stroke-width: 2.5; stroke-dasharray: 8 8; fill: none; marker-end: url(#arrowhead); }
+      .label { font: 600 17px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#475569" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="900" fill="#ffffff"/>
+
+  <text x="700" y="58" text-anchor="middle" class="title">CMS 837A / 837B Architecture</text>
+
+  <line x1="700" y1="95" x2="700" y2="145" class="arrow"/>
+
+  <rect x="540" y="160" width="320" height="92" class="dark"/>
+  <text x="700" y="214" text-anchor="middle" class="section">RAC Pre-Edit Framework</text>
+
+  <line x1="700" y1="252" x2="700" y2="310" class="arrow"/>
+
+  <rect x="220" y="315" width="960" height="210" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2.5" rx="20"/>
+  <text x="700" y="350" text-anchor="middle" class="section">Pre-Edit Validation Layer</text>
+
+  <g>
+    <rect x="255" y="380" width="185" height="86" class="subbox"/>
+    <text x="347.5" y="418" text-anchor="middle" class="label">Receiver</text>
+    <text x="347.5" y="442" text-anchor="middle" class="label">Validation</text>
+
+    <rect x="470" y="380" width="185" height="86" class="subbox"/>
+    <text x="562.5" y="418" text-anchor="middle" class="label">Transaction</text>
+    <text x="562.5" y="442" text-anchor="middle" class="label">Identification</text>
+
+    <rect x="685" y="380" width="185" height="86" class="subbox"/>
+    <text x="777.5" y="418" text-anchor="middle" class="label">Dynamic</text>
+    <text x="777.5" y="442" text-anchor="middle" class="label">Rules</text>
+
+    <rect x="900" y="380" width="185" height="86" class="subbox"/>
+    <text x="992.5" y="418" text-anchor="middle" class="label">Duplicate</text>
+    <text x="992.5" y="442" text-anchor="middle" class="label">Check</text>
+
+    <rect x="255" y="500" width="235" height="86" class="subbox"/>
+    <text x="372.5" y="538" text-anchor="middle" class="label">Error</text>
+    <text x="372.5" y="562" text-anchor="middle" class="label">Reporting</text>
+
+    <rect x="520" y="500" width="360" height="86" class="subbox"/>
+    <text x="700" y="538" text-anchor="middle" class="label">Claim</text>
+    <text x="700" y="562" text-anchor="middle" class="label">Classification</text>
+  </g>
+
+  <line x1="700" y1="525" x2="700" y2="575" class="dashed"/>
+
+  <line x1="700" y1="585" x2="700" y2="650" class="arrow"/>
+
+  <rect x="520" y="655" width="360" height="92" class="box"/>
+  <text x="700" y="710" text-anchor="middle" class="section">ITXA Translation</text>
+
+  <line x1="700" y1="747" x2="700" y2="800" class="arrow"/>
+
+  <rect x="520" y="805" width="360" height="92" class="dark"/>
+  <text x="700" y="860" text-anchor="middle" class="section">GIAS Adjudication</text>
+</svg>
